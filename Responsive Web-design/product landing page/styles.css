@@ -1,0 +1,354 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family:'Source Sans Pro', sans-serif;
+}
+/* header */
+#header {
+  display: flex;
+  top:0px;
+  width:100%;
+  background: black;
+  position: fixed;
+  z-index: 5;
+}
+
+#logo-div{
+  text-align: center;
+}
+#header-img{
+  display: inline-block;
+  margin-top: 8px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+/* navbar */
+#nav-bar {
+  height: 80px;
+  display: flex;
+  margin-left:auto;
+  right:15px;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  font-family: 'Baloo Bhai 2', serif;
+}
+
+#nav-bar ul li {
+  margin-top: 8px;
+  padding: 14px 5px 12px 12px;
+  list-style: none;
+}
+#nav-bar ul li a{
+  text-decoration: none;
+  color: rgb(219, 215, 215);
+  font-size: 1.4rem;
+}
+
+#nav-bar ul li a:hover{
+  color: #34B3F1;
+  cursor: pointer;
+}
+
+/* Home Section */
+section #home{
+  position: relative;
+  top:80px;
+  display:flex;
+  width:98.99vw;
+  height: auto;
+  background: url(https://img.freepik.com/premium-vector/background-white-elegant-texture_23-2148438404.jpg?w=360) no-repeat center center/cover;
+}
+#home #content-box{
+  width:50%;
+}
+#home #home-content{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 25px;
+  margin-top:180px;
+  line-height: 1.2;
+}
+#home-content #main-heading{
+  font-size: 3.8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#home-content #home-para{
+  padding-top:5px;
+  font-size: 1.5rem;
+}
+#home #img-box{
+  width:46%;
+}
+#main-img{
+  display: inline-block;
+  margin:5px;
+  position: relative;
+  top: 7px;
+  margin-left: 45px;
+  width:70%;
+}
+
+/* About Section */
+section #about{
+  position: relative;
+  margin-top: 100px;
+  width: 98.99vw;
+  height: auto;
+  text-align: center;
+  background: url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png) no-repeat center center/cover;
+}
+section #about #about-heading{
+  font-size: 2.9rem;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #EEEEEE;
+}
+#about .card-container{
+  display: flex;
+  flex-direction: row;
+}
+.card-container .card{
+  width: 33%;
+  margin:25px;
+  background: rgb(234, 224, 226);
+  overflow: auto;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.card .card-title{
+  padding-top: 25px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+#card-title1{
+  background-color: #F15412;
+}
+#card-title2{
+  background-color: #34B3F1;
+}
+#card-title3{
+  background-color: #F15412;
+}
+
+.card-description{
+  width:95%;
+  text-align: center;
+  padding: 3px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+/* Video - Element */
+
+#description{
+  position: relative;
+  width:98.99vw;
+  height:auto;
+  text-align: center;
+  padding-top: 17px;
+  background: url(https://img.freepik.com/premium-vector/background-white-elegant-texture_23-2148438404.jpg?w=360) no-repeat center center/cover;
+}
+#description-heading{
+  text-align: center;
+  padding:15px;
+  font-size: 2.2rem;
+}
+.container-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-text{
+  width:50%;
+  height:auto;
+  margin:auto;
+  padding:50px;
+}
+.sub-heading{
+  font-weight: bold;
+  line-height: 5;
+  font-size: 1.3rem;
+  padding-bottom: 80px;
+}
+.text{
+  font-size: 1.03rem;
+}
+.video-element{
+  width:50%;
+  height: inherit;
+  margin:auto;
+  padding:50px;
+}
+
+/* Responsive */
+@media(max-width: 767px){
+  #home{
+    flex-direction: column;
+    margin:auto;
+  }
+  #home #content-box{
+    width: 100%;
+  }
+  #home #img-box{
+    width:100%;
+  }
+  #main-heading{
+    font-size: 1.4rem;
+  }
+  #home-para{
+    font-size: 1.01rem;
+  }
+  #about .card-container{
+    flex-direction: column;
+  }
+  .card-container .card{
+    width: 85%;
+  }
+  .container-flex{
+    flex-direction: column;
+  }
+  .sub-heading{
+    line-height: 1;
+  }
+  .video-element{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-width: 574px){
+  #header{
+    flex-direction: column;
+  }
+  #nav-bar{
+    width:100%;
+    padding:2px;
+    margin:auto;
+  }
+  #nav-bar ul {
+    margin:auto;
+    top:2px;
+  }
+  
+  #nav-bar ul li {
+    margin-top: 8px;
+    padding: 5px;
+  }
+  #nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(219, 215, 215);
+    font-size: 1.3rem;
+  }
+}
+/* Footer */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #34B3F1;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.form-div{
+  padding:5px;
+  font-size: 1.4em;
+  line-height: 2;
+}
+#email{
+  border:2px solid black;
+  width: 130px;
+  height: 25px;
+}
+#submit{
+  border:2px solid black;
+  width: 60px;
+  height: 25px;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
